@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Project Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background-color: #343a40;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-text {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .project-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+        }
+        .project-box {
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .project-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            color: #6c757d;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DIY Project Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'About-us' %}">About</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div>
+            <h1 class="hero-text">Welcome to DIY Project Planner</h1>
+            <p>Plan, manage, and organize your DIY projects with ease.</p>
+            <div class="d-flex justify-content-center">
+                <a href="/login" class="btn btn-primary me-2">Login</a>
+                <a href="/register" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="container project-section">
+        <h2 class="text-center mb-5">Explore DIY Project Categories</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="project-box">
+                    <div class="project-icon">🔨</div>
+                    <div class="project-title">Woodworking</div>
+                    <p class="project-description">Create stunning furniture and decorative items with simple woodworking techniques.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-box">
+                    <div class="project-icon">🎨</div>
+                    <div class="project-title">Arts & Crafts</div>
+                    <p class="project-description">Unleash your creativity with DIY art projects, painting, and craft-making.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-box">
+                    <div class="project-icon">🔧</div>
+                    <div class="project-title">Electronics</div>
+                    <p class="project-description">Build cool gadgets and learn the basics of electronics with hands-on projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 DIY Project Planner. All Rights Reserved.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

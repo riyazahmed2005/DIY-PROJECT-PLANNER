@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project.name }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ project.name }}</h1>
+        <img src="{{ project.image.url }}" alt="{{ project.name }}">
+        <h3>Description:</h3>
+        <p>{{ project.description }}</p>
+        <h3>Materials Required:</h3>
+        <p>{{ project.materials }}</p>
+        <h3>Steps:</h3>
+        <p>{{ project.steps|linebreaksbr }}</p>
+        <a href="{% url 'project_list' %}">Back to Projects</a>
+    </div>
+</body>
+</html>

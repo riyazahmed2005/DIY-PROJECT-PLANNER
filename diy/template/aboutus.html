@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #555;
+    }
+
+    header {
+      background-color: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 3rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    main {
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .member {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .member h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #34495E;
+      font-weight: 500;
+    }
+
+    .member p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #7F8C8D;
+    }
+
+    .member a {
+      color: #3498DB;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .member a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+    <p>Meet our incredible team who make it all happen.</p>
+  </header>
+  <main>
+    <section class="team">
+      <div class="member">
+        <h2>Riyaz Ahmed H</h2>
+        <p>Email: <a href="mailto:riyazhafeez08@gmail.com">riyazhafeez08@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+916381669282">6381669282</a></p>
+      </div>
+      <div class="member">
+        <h2>Raghul P</h2>
+        <p>Email: <a href="mailto:raghulpadhu@gmail.com">raghulpadhu@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+916382048962">6382048962</a></p>
+      </div>
+      <div class="member">
+        <h2>Raseen Raja R</h2>
+        <p>Email: <a href="mailto:raseenraja@gmail.com">raseenraja@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+919677341706">9677341706</a></p>
+      </div>
+      <div class="member">
+        <h2>Sachin B</h2>
+        <p>Email: <a href="mailto:sachinbaskhar@gmail.com">sachinbaskhar@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+917418189601">7418189601</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
